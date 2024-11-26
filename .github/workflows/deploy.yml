@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-haskell:
+    runs-on: ubuntu-24.04
+    container:
+      image: jlevin/ghc-wasm
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile the Haskell code to WebAssembly
+        run: |
+          . /opt/ghc-wasm/env
+          cd haskell
+          # wasm32-wasi-ghc solutions.hs -o solutions.wasm -no-hs-main -optl-mexec-model=reactor -optl-Wl,--export=hs_init,--export=solve
+          echo TODO > solutions.wasm
+      - uses: actions/upload-artifact@v4
+        with:
+          name: haskell
+          path: haskell/solutions.wasm
+
+  build-web:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Webpack the HTML and JS
+        run: |
+          cd web
+          npm ci
+          npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: web/dist
+
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    needs: [build-haskell, build-web]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: _site
+          merge-multiple: true
+      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/deploy-pages@v4

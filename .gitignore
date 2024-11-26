@@ -1,0 +1,4 @@
+.vscode/
+node_modules/
+/haskell/solutions.wasm
+/web/dist/
