@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advent of Code 2024</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                background-color: #0d1117;
+            }
+            #root {
+                background-color: #ff0000;
+                /* min-height: 100%;
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto; */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                ante risus, fringilla eu nulla sed, venenatis eleifend arcu.
+                Integer bibendum ultricies fringilla. Donec a posuere ipsum.
+                Suspendisse potenti. Donec dignissim neque dolor, eget
+                scelerisque nunc tristique at. Sed facilisis est nec augue
+                scelerisque sagittis. Mauris at feugiat augue. Pellentesque dui
+                massa, finibus nec faucibus sed, consequat non dui.
+            </p>
+            <p>
+                Phasellus risus dui, tempor non arcu sed, dictum dictum velit.
+                Nam venenatis dui ut sem fermentum aliquam. Aenean quam erat,
+                luctus ut venenatis a, aliquam non turpis. Quisque nisl turpis,
+                egestas et posuere sit amet, efficitur et massa. Praesent
+                aliquam fermentum massa. Phasellus sed ligula est. Nullam
+                feugiat at metus eget fringilla. Cras vestibulum dictum blandit.
+                Sed semper, lorem ut luctus tempor, nisi nisl rhoncus felis, ut
+                vehicula justo justo vel tortor. Praesent auctor sem id aliquam
+                vulputate. Suspendisse non fermentum lectus. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos.
+            </p>
+            <p>
+                Pellentesque convallis urna sed sapien sagittis venenatis.
+                Phasellus pharetra ac sem vitae dapibus. Proin ultricies arcu
+                vel magna interdum, fermentum lacinia lacus faucibus. In
+                vestibulum ligula et enim tempor dictum. Phasellus vestibulum,
+                urna et sollicitudin vulputate, tortor dui lobortis purus, et
+                vehicula nisi justo ut diam. Duis vestibulum, odio nec sagittis
+                sodales, tellus est auctor eros, in pulvinar justo leo id sem.
+                Integer in lectus massa. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Proin imperdiet quam ut facilisis lobortis.
+            </p>
+            <p>
+                Nunc mattis sodales tortor venenatis commodo. Curabitur faucibus
+                felis dapibus, bibendum mi sit amet, tincidunt magna. Aliquam
+                nec varius nunc. Donec rutrum, magna consequat viverra
+                tincidunt, enim nunc vestibulum nulla, quis cursus arcu ex eu
+                neque. Etiam nibh massa, tempor ut sagittis a, viverra vel
+                libero. Maecenas suscipit convallis sem, eget pellentesque arcu
+                porta eget. Aenean luctus sed diam vitae dignissim. Ut in
+                condimentum augue, ut lacinia dui.
+            </p>
+            <p>
+                Donec vestibulum odio in rhoncus suscipit. Integer vel luctus
+                mauris, vel viverra quam. Fusce in hendrerit purus. Aliquam id
+                arcu in quam accumsan venenatis et ac neque. Praesent venenatis
+                odio turpis, at condimentum turpis finibus id. Ut bibendum metus
+                vitae metus laoreet sagittis. Quisque rutrum imperdiet
+                pellentesque. In at neque sed mi consequat dapibus. In malesuada
+                ipsum ac aliquet scelerisque. Aenean nec molestie arcu. Sed
+                fermentum eros mauris, eget convallis felis gravida eget. Donec
+                arcu lacus, eleifend non lacinia eu, sodales id odio.
+            </p>
+            <p>
+                Sed dapibus sapien nec auctor tristique. Integer in volutpat
+                risus. Integer vitae ornare augue. Suspendisse potenti. Proin
+                placerat mauris sodales tellus sollicitudin, eu euismod turpis
+                euismod. Vestibulum dui nibh, maximus id consectetur id, viverra
+                at ex. Sed blandit varius nibh, sit amet pharetra arcu rutrum
+                nec.
+            </p>
+            <p>
+                Ut vel quam quis augue feugiat feugiat sit amet in odio. Cras at
+                pretium justo. Cras arcu lectus, vehicula non felis in, posuere
+                laoreet nulla. Nullam tincidunt dolor vel enim commodo finibus.
+                Praesent id mi ut ligula iaculis venenatis. Etiam et
+                sollicitudin erat. Proin mi dolor, ultricies porta neque eu,
+                rhoncus varius nisl. Maecenas eget felis pretium, viverra erat
+                non, dignissim libero.
+            </p>
+            <p>
+                Ut nec mi tempor, vulputate ligula at, facilisis felis. Sed non
+                commodo eros, et tempor ante. Nam auctor facilisis ex, sed
+                aliquet nisi dapibus a. Vestibulum elit ipsum, aliquam at nisi
+                sit amet, scelerisque posuere purus. Nulla facilisi. Donec
+                sollicitudin ipsum at felis semper, quis euismod tortor maximus.
+                Praesent ullamcorper venenatis ante, a fringilla turpis
+                consequat eu. Nam rutrum varius scelerisque. Nam condimentum
+                tortor convallis leo tempus, ut dapibus lorem vulputate.
+                Maecenas in nibh ullamcorper, pellentesque sem eu, malesuada
+                arcu. Duis auctor risus et odio dictum aliquam fermentum ut est.
+            </p>
+            <p>
+                Nunc ipsum nunc, efficitur ut turpis id, aliquet pretium mauris.
+                Morbi ac hendrerit felis. Proin ullamcorper, diam sit amet porta
+                aliquet, odio enim dictum leo, et viverra tortor felis eget
+                lorem. Nunc in volutpat orci, et ullamcorper dui. Suspendisse et
+                libero quis eros mollis viverra. Vivamus dictum massa ante, ac
+                gravida urna ultricies nec. Aliquam fringilla lectus sed ipsum
+                sollicitudin, at dignissim dolor consequat. Nunc lobortis
+                ullamcorper tortor, ut iaculis justo tristique et. Suspendisse
+                potenti. Nullam at arcu vel elit venenatis accumsan sed sodales
+                dolor. Vivamus malesuada viverra ligula eget laoreet. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae; Vivamus dapibus turpis id condimentum dictum.
+            </p>
+            <p>
+                Nulla mauris tortor, porta vel elementum ac, sodales id est.
+                Nulla eleifend ut neque ut porttitor. Mauris tincidunt nisi
+                eros, quis maximus erat sollicitudin a. Nulla dignissim gravida
+                ex, ut vehicula erat venenatis eu. Duis fringilla at neque nec
+                semper. Nulla vel metus est. Maecenas nec nibh mauris. Vivamus
+                in lacus sapien. Aliquam ornare felis quam, sit amet bibendum
+                tellus suscipit nec. Mauris efficitur iaculis nibh ut luctus.
+            </p>
+            <p>
+                Sed rutrum lorem nec leo aliquam volutpat. Aenean ac
+                pellentesque dui. Aliquam efficitur justo eu ornare rutrum. Nam
+                fringilla varius orci non vestibulum. Vestibulum quis metus
+                vehicula lectus tincidunt mollis. Vestibulum non dignissim erat,
+                vitae iaculis diam. Pellentesque tristique bibendum ligula sed
+                posuere. Phasellus ultrices elit at consectetur cursus. Sed in
+                sapien nec odio efficitur mollis. Vivamus purus felis, molestie
+                quis hendrerit non, pretium vitae arcu. Nulla augue metus,
+                ornare non egestas a, semper sit amet magna. Nulla sed metus eu
+                odio finibus euismod. Curabitur tempor congue erat at posuere.
+                Cras malesuada erat non sem placerat, a venenatis lorem
+                imperdiet. In sit amet sem non nulla feugiat convallis in at
+                elit. Ut vel cursus mauris.
+            </p>
+            <p>
+                Sed fermentum imperdiet augue, at pretium magna viverra
+                ultrices. Sed elementum, diam ut pellentesque vestibulum, nibh
+                dui imperdiet nunc, venenatis eleifend dui nisl sed elit. Donec
+                et erat placerat ipsum ornare condimentum. Aliquam efficitur
+                risus at lacus bibendum dapibus. Maecenas erat orci, pharetra
+                sed risus non, cursus rhoncus ex. Nulla scelerisque orci blandit
+                metus dignissim, vel molestie justo finibus. Sed maximus est
+                neque, feugiat lacinia enim faucibus consequat. Suspendisse
+                faucibus pharetra fermentum.
+            </p>
+        </div>
+    </body>
+</html>
