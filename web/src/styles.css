@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+    background-color: #000000;
+    background-image: url("santa.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: "VT323", monospace;
+    font-size: 22px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+a {
+    color: #88aaff;
+}
+
+#root {
+    background-color: #0d1117;
+    color: #ccffcc;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#log {
+    width: 100%;
+    td:nth-child(1) {
+        width: 260px;
+    }
+    td:nth-child(2) {
+        width: 220px;
+        text-align: right;
+    }
+    td:nth-child(3) {
+        text-align: right;
+    }
+}

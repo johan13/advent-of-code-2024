@@ -2,3 +2,4 @@
 node_modules/
 /haskell/solutions.wasm
 /web/dist/
+.DS_Store
