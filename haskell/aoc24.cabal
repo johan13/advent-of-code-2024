@@ -1,0 +1,25 @@
+cabal-version:      3.0
+name:               aoc24
+version:            0.1.0.0
+license:            ISC
+author:             Johan Levin
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+library aoc24-solutions
+    import:           warnings
+    exposed-modules:  Aoc24
+    build-depends:    base ^>=4.17.2.1
+    hs-source-dirs:   src
+    other-modules:    Day01, Day02
+    default-language: GHC2021
+
+test-suite aoc24-test
+    import:           warnings
+    default-language: GHC2021
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1, HUnit ^>=1.6.2.0, aoc24-solutions
