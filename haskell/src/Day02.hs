@@ -16,4 +16,4 @@ parseInput = map (map read . words) . lines
 
 -- Check if a list is increasing with steps of 1-3.
 safeIncr :: [Int] -> Bool
-safeIncr levels = and $ zipWith (\a b -> a - b >= 1 && a - b <= 3) levels (tail levels)
+safeIncr levels = and $ zipWith (\a b -> a - b >= 1 && a - b <= 3) levels (drop 1 levels)

@@ -1,5 +1,4 @@
 module Day03 (day03p1, day03p2) where
-import Data.List (foldl')
 import Text.Regex.TDFA ((=~), getAllTextMatches)
 
 day03p1 :: String -> Int
