@@ -1,5 +1,6 @@
 import { WASI, File, OpenFile, ConsoleStdout } from "@bjorn3/browser_wasi_shim";
 
+/** @returns {Promise<(day: number, part: number, input: string) => Promise<bigint>>}> */
 export async function loadSolver() {
     const fds = [
         new OpenFile(new File([])),

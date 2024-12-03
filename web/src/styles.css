@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
-    background-color: #0d1117;
+    background-color: rgb(13,17,23);
     background-image: url("santa.jpg");
     background-repeat: no-repeat;
     background-position: top right;
@@ -19,18 +19,19 @@ a {
 }
 
 #root {
-    width: 600px;
+    width: 480px;
     margin: 0 auto;
     padding: 10px;
+    background-color: rgba(13,17,23,0.75);
 }
 
 #log {
     width: 100%;
     td:nth-child(1) {
-        width: 260px;
+        width: 175px;
     }
     td:nth-child(2) {
-        width: 220px;
+        width: 175px;
         text-align: right;
     }
     td:nth-child(3) {
