@@ -1,6 +1,6 @@
 .vscode/
 node_modules/
-/haskell/solutions.wasm
+/haskell/out/
 /web/dist/
 .DS_Store
 dist-newstyle/

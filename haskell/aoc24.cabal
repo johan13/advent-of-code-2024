@@ -11,10 +11,12 @@ common warnings
 library aoc24-solutions
     import:           warnings
     exposed-modules:  Aoc24
-    build-depends:    base ^>=4.20.0.0, regex-tdfa ^>= 1.3.2.2
+    build-depends:    base ^>=4.20.0.0, regex-tdfa ^>= 1.3.2.2, ghc-experimental
     hs-source-dirs:   src
     other-modules:    Day01, Day02, Day03
     default-language: GHC2021
+    if arch(wasm32)
+        ghc-options:  -o out/aoc24.wasm -no-hs-main -optl-mexec-model=reactor -optl-Wl,--export=solve
 
 test-suite aoc24-test
     import:           warnings

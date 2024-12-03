@@ -8,4 +8,7 @@ module.exports = {
         new CopyPlugin({ patterns: [{ from: "*.(css|jpg)", context: "src" }] }),
         new HtmlPlugin({ template: "src/index.html" }),
     ],
+    module: {
+        rules: [{ test: /\.txt$/i, use: "raw-loader" }],
+    },
 };

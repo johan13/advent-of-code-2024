@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
-    background-color: #000000;
+    background-color: #0d1117;
     background-image: url("santa.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+    color: #ccffcc;
     font-family: "VT323", monospace;
     font-size: 22px;
 }
@@ -18,8 +19,6 @@ a {
 }
 
 #root {
-    background-color: #0d1117;
-    color: #ccffcc;
     width: 600px;
     margin: 0 auto;
     padding: 10px;
@@ -37,4 +36,8 @@ a {
     td:nth-child(3) {
         text-align: right;
     }
+}
+
+.error {
+    color: #ff4444;
 }

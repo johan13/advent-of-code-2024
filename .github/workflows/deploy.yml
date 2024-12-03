@@ -8,19 +8,20 @@ jobs:
   build-haskell:
     runs-on: ubuntu-24.04
     container:
-      image: jlevin/ghc-wasm
+      image: jlevin/ghc-wasm:0.3
     steps:
       - uses: actions/checkout@v4
       - name: Compile the Haskell code to WebAssembly
         run: |
           . /opt/ghc-wasm/env
           cd haskell
-          # wasm32-wasi-ghc solutions.hs -o solutions.wasm -no-hs-main -optl-mexec-model=reactor -optl-Wl,--export=hs_init,--export=solve
-          echo TODO > solutions.wasm
+          mkdir out
+          wasm32-wasi-cabal build
+          $(wasm32-wasi-ghc --print-libdir)/post-link.mjs -i out/aoc24.wasm -o out/jsffi.js
       - uses: actions/upload-artifact@v4
         with:
           name: haskell
-          path: haskell/solutions.wasm
+          path: haskell/out
 
   build-web:
     runs-on: ubuntu-24.04
