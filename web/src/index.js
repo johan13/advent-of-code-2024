@@ -5,7 +5,7 @@ import { loadSolver } from "./wasm.js";
 main().catch(console.error);
 
 async function main() {
-    const wasmEntry = startLogEntry("Loading WebAssembly");
+    const wasmEntry = startLogEntry("Load WebAssembly");
     const solve = await loadSolver().catch(() => undefined);
     if (!solve) {
         finishLogEntry(wasmEntry, "Failed", false);
@@ -23,20 +23,20 @@ async function main() {
 
         const entry1 = startLogEntry(`Day ${day} part 1`);
         try {
-            const answer1 = await solve(day, 1, input);
+            const answer1 = Number(await solve(day, 1, input));
             finishLogEntry(entry1, answer1, answer1 === correct1);
         } catch (error) {
             console.error(error);
-            finishLogEntry(entry1, "Error", false);
+            finishLogEntry(entry1, error.message, false);
         }
 
         const entry2 = startLogEntry(`Day ${day} part 2`);
         try {
-            const answer2 = await solve(day, 2, input);
+            const answer2 = Number(await solve(day, 2, input));
             finishLogEntry(entry2, answer2, answer2 === correct2);
         } catch (error) {
             console.error(error);
-            finishLogEntry(entry2, "Error", false);
+            finishLogEntry(entry2, error.message, false);
         }
     }
 }
