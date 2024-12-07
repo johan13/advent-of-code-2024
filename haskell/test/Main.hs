@@ -16,7 +16,7 @@ tests = TestList [
     TestCase (assertEqual "Day 05 part 1"           4774 . day05p1 =<< readFile "../inputs/input05.txt"),
     TestCase (assertEqual "Day 05 part 2"           6004 . day05p2 =<< readFile "../inputs/input05.txt"),
     TestCase (assertEqual "Day 06 part 1"           4656 . day06p1 =<< readFile "../inputs/input06.txt"),
-    TestCase (assertEqual "Day 06 part 2"           (-1) . day06p2 =<< readFile "../inputs/input06.txt")]
+    TestCase (assertEqual "Day 06 part 2"           1575 . day06p2 =<< readFile "../inputs/input06.txt")]
 
 main :: IO ()
 main = do
