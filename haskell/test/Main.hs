@@ -5,18 +5,20 @@ import Test.HUnit
 
 tests :: Test
 tests = TestList [
-    TestCase (assertEqual "Day 01 part 1"        2285373 . day01p1 =<< readFile "../inputs/input01.txt"),
-    TestCase (assertEqual "Day 01 part 2"       21142653 . day01p2 =<< readFile "../inputs/input01.txt"),
-    TestCase (assertEqual "Day 02 part 1"            411 . day02p1 =<< readFile "../inputs/input02.txt"),
-    TestCase (assertEqual "Day 02 part 2"            465 . day02p2 =<< readFile "../inputs/input02.txt"),
-    TestCase (assertEqual "Day 03 part 1"      173529487 . day03p1 =<< readFile "../inputs/input03.txt"),
-    TestCase (assertEqual "Day 03 part 2"       99532691 . day03p2 =<< readFile "../inputs/input03.txt"),
-    TestCase (assertEqual "Day 04 part 1"           2639 . day04p1 =<< readFile "../inputs/input04.txt"),
-    TestCase (assertEqual "Day 04 part 2"           2005 . day04p2 =<< readFile "../inputs/input04.txt"),
-    TestCase (assertEqual "Day 05 part 1"           4774 . day05p1 =<< readFile "../inputs/input05.txt"),
-    TestCase (assertEqual "Day 05 part 2"           6004 . day05p2 =<< readFile "../inputs/input05.txt"),
-    TestCase (assertEqual "Day 06 part 1"           4656 . day06p1 =<< readFile "../inputs/input06.txt"),
-    TestCase (assertEqual "Day 06 part 2"           1575 . day06p2 =<< readFile "../inputs/input06.txt")]
+    TestCase (assertEqual "Day 01 part 1"         2285373 . day01p1 =<< readFile "../inputs/input01.txt"),
+    TestCase (assertEqual "Day 01 part 2"        21142653 . day01p2 =<< readFile "../inputs/input01.txt"),
+    TestCase (assertEqual "Day 02 part 1"             411 . day02p1 =<< readFile "../inputs/input02.txt"),
+    TestCase (assertEqual "Day 02 part 2"             465 . day02p2 =<< readFile "../inputs/input02.txt"),
+    TestCase (assertEqual "Day 03 part 1"       173529487 . day03p1 =<< readFile "../inputs/input03.txt"),
+    TestCase (assertEqual "Day 03 part 2"        99532691 . day03p2 =<< readFile "../inputs/input03.txt"),
+    TestCase (assertEqual "Day 04 part 1"            2639 . day04p1 =<< readFile "../inputs/input04.txt"),
+    TestCase (assertEqual "Day 04 part 2"            2005 . day04p2 =<< readFile "../inputs/input04.txt"),
+    TestCase (assertEqual "Day 05 part 1"            4774 . day05p1 =<< readFile "../inputs/input05.txt"),
+    TestCase (assertEqual "Day 05 part 2"            6004 . day05p2 =<< readFile "../inputs/input05.txt"),
+    TestCase (assertEqual "Day 06 part 1"            4656 . day06p1 =<< readFile "../inputs/input06.txt"),
+    TestCase (assertEqual "Day 06 part 2"            1575 . day06p2 =<< readFile "../inputs/input06.txt"),
+    TestCase (assertEqual "Day 07 part 1"   2941973819040 . day07p1 =<< readFile "../inputs/input07.txt"),
+    TestCase (assertEqual "Day 07 part 2" 249943041417600 . day07p2 =<< readFile "../inputs/input07.txt")]
 
 main :: IO ()
 main = do
