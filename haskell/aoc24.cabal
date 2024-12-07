@@ -11,7 +11,7 @@ common warnings
 library aoc24-solutions
     import:           warnings
     exposed-modules:  Aoc24
-    build-depends:    base, regex-tdfa, ghc-experimental, extra
+    build-depends:    base, regex-tdfa, ghc-experimental, split
     hs-source-dirs:   src
     other-modules:    Day01, Day02, Day03, Day04, Day05
     default-language: GHC2021

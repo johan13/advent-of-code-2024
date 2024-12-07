@@ -1,6 +1,6 @@
 module Day05 (day05p1, day05p2) where
 import Data.List (sortBy)
-import Data.List.Extra (splitOn)
+import Data.List.Split (splitOn)
 
 day05p1 :: String -> Int
 day05p1 input = let (rules, updates) = parseInput input
