@@ -24,6 +24,8 @@ p1filter target (a:b:rest) = p1filter target (a*b:rest) || p1filter target (a+b:
 p2filter :: Int64 -> [Int64] -> Bool
 p2filter _ [] = undefined
 p2filter target [result] = target == result
-p2filter target (a:b:rest) = p2filter target (a*b:rest) || p2filter target (a+b:rest) || p2filter target (conc:rest)
+p2filter target (a:b:rest)
+    | a > target = False -- Optimization
+    | otherwise = p2filter target (a*b:rest) || p2filter target (a+b:rest) || p2filter target (conc:rest)
   where
     conc = a * 10 ^ (fromIntegral (integerLogBase 10 (fromIntegral b) + 1) :: Int) + b
