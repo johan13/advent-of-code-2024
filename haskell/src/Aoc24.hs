@@ -7,6 +7,7 @@ module Aoc24 (
     day05p1, day05p2,
     day06p1, day06p2,
     day07p1, day07p2,
+    day08p1, day08p2,
 ) where
 import Day01
 import Day02
@@ -15,6 +16,7 @@ import Day04
 import Day05
 import Day06
 import Day07
+import Day08
 
 #if defined(wasm32_HOST_ARCH)
 import Data.Int (Int64)
@@ -39,5 +41,7 @@ solve day part input = impl (fromJSString input)
         (6, 2) -> \x -> fromIntegral (day06p2 x)
         (7, 1) -> \x -> fromIntegral (day07p1 x)
         (7, 2) -> \x -> fromIntegral (day07p2 x)
+        (8, 1) -> \x -> fromIntegral (day08p1 x)
+        (8, 2) -> \x -> fromIntegral (day08p2 x)
         _ -> undefined
 #endif
