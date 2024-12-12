@@ -10,6 +10,7 @@ export const answers = {
     9: [-1, -1],
     10: [-1, -1],
     11: [213625, 252442982856820],
+    12: [-1, -1],
 };
 
 export const inputs = {
@@ -24,4 +25,5 @@ export const inputs = {
     9: require("../../inputs/input09.txt").default,
     10: require("../../inputs/input10.txt").default,
     11: require("../../inputs/input11.txt").default,
+    12: require("../../inputs/input11.txt").default,
 };
