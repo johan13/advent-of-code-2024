@@ -13,7 +13,8 @@ library aoc24-solutions
     exposed-modules:  Aoc24
     build-depends:    base, regex-tdfa, ghc-experimental, split, containers, monad-memo
     hs-source-dirs:   src
-    other-modules:    Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11, Day12
+    other-modules:    Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11,
+                      Day12, Day13
     default-language: GHC2021
     if arch(wasm32)
         ghc-options:  -o out/aoc24.wasm -no-hs-main -optl-mexec-model=reactor -optl-Wl,--export=solve
