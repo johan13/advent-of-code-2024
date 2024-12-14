@@ -23,12 +23,12 @@ tests = TestList [
     TestCase (assertEqual "Day 08 part 2"            1231 . day08p2 =<< readFile "../inputs/input08.txt"),
     TestCase (assertEqual "Day 09 part 1"   6310675819476 . day09p1 =<< readFile "../inputs/input09.txt"),
     TestCase (assertEqual "Day 09 part 2"   6335972980679 . day09p2 =<< readFile "../inputs/input09.txt"),
-    TestCase (assertEqual "Day 10 part 1"            (-1) . day10p1 =<< readFile "../inputs/input10.txt"),
-    TestCase (assertEqual "Day 10 part 2"            (-1) . day10p2 =<< readFile "../inputs/input10.txt"),
+    -- TestCase (assertEqual "Day 10 part 1"            (-1) . day10p1 =<< readFile "../inputs/input10.txt"),
+    -- TestCase (assertEqual "Day 10 part 2"            (-1) . day10p2 =<< readFile "../inputs/input10.txt"),
     TestCase (assertEqual "Day 11 part 1"          213625 . day11p1 =<< readFile "../inputs/input11.txt"),
     TestCase (assertEqual "Day 11 part 2" 252442982856820 . day11p2 =<< readFile "../inputs/input11.txt"),
-    TestCase (assertEqual "Day 12 part 1"            (-1) . day12p1 =<< readFile "../inputs/input12.txt"),
-    TestCase (assertEqual "Day 12 part 2"            (-1) . day12p2 =<< readFile "../inputs/input12.txt"),
+    -- TestCase (assertEqual "Day 12 part 1"            (-1) . day12p1 =<< readFile "../inputs/input12.txt"),
+    -- TestCase (assertEqual "Day 12 part 2"            (-1) . day12p2 =<< readFile "../inputs/input12.txt"),
     TestCase (assertEqual "Day 13 part 1"           30973 . day13p1 =<< readFile "../inputs/input13.txt"),
     TestCase (assertEqual "Day 13 part 2"  95688837203288 . day13p2 =<< readFile "../inputs/input13.txt")]
 

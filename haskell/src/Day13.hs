@@ -12,9 +12,9 @@ day13p2 = sum . map (cheapestWin . addTenTrillion) . parseInput
     addTenTrillion game = let (oldx, oldy) = prize game
         in game { prize = (10000000000000 + oldx, 10000000000000 + oldy) }
 
--- The problem can be expressed as a linear system of two equations:
+-- The problem can be expressed as a system of two linear equations:
 -- na * ax + nb * bx = px ; na * ay + nb * by = py
--- There is never more than one way to win. "Cheapest" is a diversion.
+-- Assuming independent equations, there is exactly one solution, but it may be fractional.
 cheapestWin :: Game -> Int64
 cheapestWin game
     | determinant == 0 = undefined -- We do not handle dependent equations.
