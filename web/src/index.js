@@ -24,8 +24,8 @@ async function main() {
             const correct = answers[day][part - 1];
             const entry = startLogEntry(`Day ${day} part ${part}`);
             try {
-                const answer = Number(await solve(day, part, input));
-                finishLogEntry(entry, answer, answer === correct);
+                const answer = await solve(day, part, input);
+                finishLogEntry(entry, answer, answer == correct);
             } catch (error) {
                 console.error(error);
                 finishLogEntry(entry, "Error", false);
