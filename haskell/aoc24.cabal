@@ -14,7 +14,7 @@ library aoc24-solutions
     build-depends:    base, regex-tdfa, ghc-experimental, split, containers, monad-memo, heap, vector
     hs-source-dirs:   src
     other-modules:    Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11,
-                      Day12, Day13, Day14, Day15, Day16, Day17, Day18
+                      Day12, Day13, Day14, Day15, Day16, Day17, Day18, Day19
     default-language: GHC2021
     ghc-options:      -Wno-x-partial
     if arch(wasm32)
