@@ -9,4 +9,9 @@
             "path": "haskell"
         }
     ],
+    "settings": {
+        "[haskell]": {
+            "editor.detectIndentation": false
+        }
+    },
 }
