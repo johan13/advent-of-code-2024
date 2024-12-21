@@ -18,6 +18,8 @@ export const answers = {
     17: ["1,0,2,0,5,7,2,1,3", 265652340990875],
     18: [250, "56,8"],
     19: [228, 584553405070389],
+    20: [-1, -1],
+    21: [-1, -1],
 };
 
 export const inputs = {
@@ -40,4 +42,6 @@ export const inputs = {
     17: require("../../inputs/input17.txt").default,
     18: require("../../inputs/input18.txt").default,
     19: require("../../inputs/input19.txt").default,
+    20: require("../../inputs/input20.txt").default,
+    21: require("../../inputs/input21.txt").default,
 };
