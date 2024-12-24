@@ -22,6 +22,7 @@ export const answers = {
     21: [-1, -1],
     22: [-1, -1],
     23: [-1, -1],
+    24: [-1, -1],
 };
 
 export const inputs = {
@@ -48,4 +49,5 @@ export const inputs = {
     21: require("../../inputs/input21.txt").default,
     22: require("../../inputs/input22.txt").default,
     23: require("../../inputs/input23.txt").default,
+    24: require("../../inputs/input24.txt").default,
 };
