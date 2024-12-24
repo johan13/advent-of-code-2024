@@ -105,6 +105,6 @@ solve day part input = toJSString $ impl $ fromJSString input
         (23, 1) -> \x -> show $ day23p1 x
         (23, 2) -> \x -> show $ day23p2 x
         (24, 1) -> \x -> show $ day24p1 x
-        (24, 2) -> \x -> show $ day24p2 x
+        (24, 2) -> \x -> day24p2 x
         _ -> undefined
 #endif

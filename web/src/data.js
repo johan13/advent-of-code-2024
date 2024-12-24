@@ -22,7 +22,7 @@ export const answers = {
     21: [-1, -1],
     22: [-1, -1],
     23: [-1, -1],
-    24: [-1, -1],
+    24: [45923082839246, "jgb,rkf,rrs,rvc,vcg,z09,z20,z24"],
 };
 
 export const inputs = {
