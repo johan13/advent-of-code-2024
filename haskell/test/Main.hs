@@ -52,7 +52,9 @@ tests = TestList [
     -- TestCase (assertEqual "Day 23 part 1"            (-1) . day23p1 =<< readFile "../inputs/input23.txt"),
     -- TestCase (assertEqual "Day 23 part 2"            (-1) . day23p2 =<< readFile "../inputs/input23.txt"),
     TestCase (assertEqual "Day 24 part 1"  45923082839246 . day24p1 =<< readFile "../inputs/input24.txt"),
-    TestCase (assertEqual "Day 24 part 2" "jgb,rkf,rrs,rvc,vcg,z09,z20,z24" . day24p2 =<< readFile "../inputs/input24.txt")]
+    TestCase (assertEqual "Day 24 part 2" "jgb,rkf,rrs,rvc,vcg,z09,z20,z24" . day24p2 =<< readFile "../inputs/input24.txt"),
+    TestCase (assertEqual "Day 25 part 1"            3439 . day25p1 =<< readFile "../inputs/input25.txt"),
+    TestCase (assertEqual "Day 25 part 2"            (-1) . day25p2 =<< readFile "../inputs/input25.txt")]
 
 main :: IO ()
 main = do

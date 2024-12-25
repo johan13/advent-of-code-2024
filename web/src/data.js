@@ -23,6 +23,7 @@ export const answers = {
     22: [-1, -1],
     23: [-1, -1],
     24: [45923082839246, "jgb,rkf,rrs,rvc,vcg,z09,z20,z24"],
+    25: [3439, -1],
 };
 
 export const inputs = {
@@ -50,4 +51,5 @@ export const inputs = {
     22: require("../../inputs/input22.txt").default,
     23: require("../../inputs/input23.txt").default,
     24: require("../../inputs/input24.txt").default,
+    25: require("../../inputs/input25.txt").default,
 };

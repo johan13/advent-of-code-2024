@@ -24,6 +24,7 @@ module Aoc24 (
     day22p1, day22p2,
     day23p1, day23p2,
     day24p1, day24p2,
+    day25p1, day25p2,
 ) where
 import Day01
 import Day02
@@ -49,6 +50,7 @@ import Day21
 import Day22
 import Day23
 import Day24
+import Day25
 
 #if defined(wasm32_HOST_ARCH)
 import GHC.Wasm.Prim
@@ -106,5 +108,7 @@ solve day part input = toJSString $ impl $ fromJSString input
         (23, 2) -> \x -> show $ day23p2 x
         (24, 1) -> \x -> show $ day24p1 x
         (24, 2) -> \x -> day24p2 x
+        (25, 1) -> \x -> show $ day25p1 x
+        (25, 2) -> \x -> show $ day25p2 x
         _ -> undefined
 #endif
